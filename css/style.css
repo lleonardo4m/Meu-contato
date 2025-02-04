@@ -97,7 +97,7 @@ strong{
     transition: .4s;
     background-color: transparent;
     border: 1px solid var(--blueshondow);
-    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.6);
     color: var(--blueshondow);
     text-align: center;
     text-decoration: none;
@@ -186,6 +186,26 @@ strong{
 .ide > img{
     max-width: 80px;
 }
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--blueshondow);
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: var(--eggplant);
+}
+
 
 footer{
     flex-direction: column;
