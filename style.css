@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --blueshadow: #060640;
+    --bluepale: #effafd;
+    --blueroyal: #4a8bdf;
+    --eggplant: #a0006d;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bluepale);
+    color: var(--blueshadow);
+    font-family: 'Lato', sans-serif;
+}
+
+section, footer { scroll-margin-top: 75px; }
+
+.navbar-brand,
+.nav-link,
+.title { color: var(--blueshadow) !important; }
+
+.nav-link { font-weight: 700; }
+.nav-link:hover, footer a:hover { color: var(--eggplant) !important; }
+
+.hero-section { min-height: calc(100vh - 72px); }
+
+.badge {
+    background-color: rgba(74, 139, 223, .12);
+    color: var(--blueroyal);
+    padding: .65rem .9rem;
+}
+
+h1 { letter-spacing: 2px; }
+h1 strong, .lead strong, .about-text strong { color: var(--blueroyal); }
+
+.btn-primary {
+    --bs-btn-bg: var(--blueroyal);
+    --bs-btn-border-color: var(--blueroyal);
+    --bs-btn-hover-bg: var(--eggplant);
+    --bs-btn-hover-border-color: var(--eggplant);
+}
+
+.profile-wrapper {
+    max-width: 390px;
+    padding: 12px;
+    border: 2px solid rgba(74, 139, 223, .2);
+    border-radius: 50%;
+}
+
+.img-profile {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.section-light { background-color: #fff; }
+
+.skill-card {
+    background: var(--bluepale);
+    border: 1px solid rgba(6, 6, 64, .08);
+    border-radius: .8rem;
+    color: var(--blueroyal);
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1.1rem .75rem;
+    text-align: center;
+    transition: transform .25s ease, color .25s ease, box-shadow .25s ease;
+}
+
+.skill-card:hover {
+    color: var(--eggplant);
+    transform: translateY(-4px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08);
+}
+
+.about-image { max-height: 360px; object-fit: cover; }
+.about-text { color: var(--blueshadow); text-align: justify; }
+
+.ide-card {
+    background: #fff;
+    max-width: 260px;
+    text-align: center;
+}
+
+.project-card {
+    height: 100%;
+    background: var(--bluepale);
+    border: 1px solid rgba(6, 6, 64, .08);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.1);
+}
+
+.project-card a {
+    color: var(--blueshadow);
+    font-weight: 700;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.project-card a:hover { color: var(--eggplant); }
+
+footer { background-color: var(--bluepale); }
+footer a { color: var(--blueshadow); transition: color .2s ease, transform .2s ease; display: inline-block; }
+footer a i { font-size: 2rem; }
+footer a:hover { transform: translateY(-3px); }
+
+.skill-card i { font-size: 1.6rem; margin-bottom: .4rem; }
+
+@media (max-width: 991.98px) {
+    .navbar-nav { padding: .75rem 0; }
+    .hero-section { min-height: auto; }
+}
+
+@media (max-width: 575.98px) {
+    h1 { letter-spacing: 0; }
+    .about-text { text-align: left; }
+}
