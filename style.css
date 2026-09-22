@@ -79,9 +79,10 @@ h1 strong, .lead strong, .about-text strong { color: var(--blueroyal); }
 
 .ide-card {
     background: #fff;
-    max-width: 260px;
     text-align: center;
 }
+
+.ide-card i { color: var(--blueroyal); }
 
 .project-card {
     height: 100%;
